@@ -150,9 +150,13 @@ const SignUp = () => {
                   {...register("password")}
                 />
               </div>
+              <Button type="submit" className="w-full">
+                Sign Up
+              </Button>
               <Button
-                type="submit"
+                variant="outline"
                 className="w-full"
+                type="button"
                 onClick={() => {
                   signUp.authenticateWithRedirect({
                     strategy: "oauth_google",
@@ -161,9 +165,6 @@ const SignUp = () => {
                   });
                 }}
               >
-                Sign Up
-              </Button>
-              <Button variant="outline" className="w-full">
                 Sign Up with Google
               </Button>
             </div>
