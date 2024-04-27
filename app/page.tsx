@@ -12,6 +12,13 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 
+interface Courses {
+  topic : string,
+  level : string,
+  resources : [],
+  id : string
+}
+
 export default function Home() {
   const { isLoaded, session, isSignedIn } = useSession();
 
@@ -28,19 +35,21 @@ export default function Home() {
   }
 
   return (
-    <div>
-      <Card>
-        <CardHeader>
-      <CardTitle>Card Title</CardTitle>
-      <CardDescription>Card Description</CardDescription>
-        </CardHeader>
-        <CardContent>
-      <p>Card Content</p>
-        </CardContent>
-        <CardFooter>
-      <p>Card Footer</p>
-        </CardFooter>
-      </Card>
+    <div className="flex flex-cols-4 gap-8">
+      <main>
+        <Card className="">
+          <CardHeader>
+        <CardTitle>Card Title</CardTitle>
+        <CardDescription>Card Description</CardDescription>
+          </CardHeader>
+          <CardContent>
+        <p>Card Content</p>
+          </CardContent>
+          <CardFooter>
+        <p>Card Footer</p>
+          </CardFooter>
+        </Card>        
+      </main>
     </div>
 
   );
