@@ -1,0 +1,82 @@
+[
+    {
+      "Topic": "Introduction to DevOps",
+      "Level": "Beginner",
+      "Resources": [
+        {
+          "URL": "https://www.coursera.org/professional-certificates/devops-and-software-engineering",
+          "freeOrPaid": "Free",
+          "time": "N/A"
+        },
+        {
+          "URL": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
+          "freeOrPaid": "Free",
+          "time": "N/A"
+        },
+        {
+          "URL": "https://www.linkedin.com/learning/devops-foundations-23454205",
+          "freeOrPaid": "Free",
+          "time": "N/A"
+        }
+      ]
+    },
+    {
+      "Topic": "DevOps with AWS",
+      "Level": "Intermediate",
+      "Resources": [
+        {
+          "URL": "https://www.coursera.org/specializations/aws-devops",
+          "freeOrPaid": "Free",
+          "time": "N/A"
+        },
+        {
+          "URL": "https://www.linkedin.com/learning/devops-with-aws",
+          "freeOrPaid": "Paid",
+          "price": "Varies"
+        },
+        {
+          "URL": "https://aws.amazon.com/training/learn-about/devops/",
+          "freeOrPaid": "Paid",
+          "price": "Varies"
+        }
+      ]
+    },
+    {
+      "Topic": "DevOps with Intermediate Skills",
+      "Level": "Intermediate",
+      "Resources": [
+        {
+          "URL": "https://www.coursera.org/specializations/aws-devops",
+          "freeOrPaid": "Free",
+          "time": "N/A"
+        },
+        {
+          "URL": "https://www.coursera.org/specializations/devops-cloud-and-agile-foundations",
+          "freeOrPaid": "Paid",
+          "price": "Varies"
+        },
+        {
+            "URL": "https://www.coursera.org/specializations/python-scripting-devops",
+            "freeOrPaid": "Paid",
+            "price": "Varies"
+        },
+        {
+            "URL": "https://martinjoo.gumroad.com/l/devops-with-laravel-plus?layout=discover&recommended_by=search&_gl=1*1h1h27m*_ga*MTY5ODEyODg4My4xNzE0MjIwNTY4*_ga_6LJN6D94N6*MTcxNDIyMDU2Ny4xLjEuMTcxNDIyMDcxMi4wLjAuMA..",
+            "freeOrPaid": "Paid",
+            "price": "$69"
+        },
+        {
+            "URL": "https://pratimuniyal.gumroad.com/l/cracking-the-devops-interview?layout=discover&recommended_by=search&_gl=1*ev8w6d*_ga*MTY5ODEyODg4My4xNzE0MjIwNTY4*_ga_6LJN6D94N6*MTcxNDIyMDU2Ny4xLjEuMTcxNDIyMDU3Mi4wLjAuMA..",
+            "freeOrPaid": "Paid",
+            "price": "$10"
+        },
+        {
+          "URL": "https://learn.microsoft.com/en-us/training/career-paths/devops-engineer",
+          "freeOrPaid": "Paid",
+          "price": "Varies"
+        }
+      ]
+    }
+]
+
+  
