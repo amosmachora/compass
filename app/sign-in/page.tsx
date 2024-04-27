@@ -136,6 +136,7 @@ const SignIn = () => {
                     redirectUrlComplete: "/",
                   });
                 }}
+                type="button"
               >
                 Login with Google
               </Button>
