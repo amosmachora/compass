@@ -1,0 +1,77 @@
+[
+    {
+        "Topic": "python",
+        "level": "beginner",
+        "Links": {
+            "time": "1 hrs",
+            "website": "https://www.python.org/about/gettingstarted/",
+            "Youtube": "https://www.youtube.com/watch?v=kqtD5dpn9C8",
+            "price": "no price",
+            "Certificate": "No Certificate"
+        }
+    },
+  
+    {
+        "Topic": "python",
+        "level": "intermediate",
+        "Links": {
+            "website": "https://realpython.com/tutorials/intermediate/",
+            "Youtube": "https://www.youtube.com/watch?v=AXkEIvbkmlg",
+            "time": "2hrs",
+            "price": "no price",
+            "Certificate": "No Certificate"
+        }
+    },
+
+    {
+        "Topic": "python",
+        "level": "Expert",
+        "Links": {
+            "website": "https://realpython.com/start-here/",
+            "Youtube": "https://www.youtube.com/watch?v=mclfteWlT2Q&list=PLzMcBGfZo4-kwmIcMDdXSuy_wSqtU-xDP",
+            "time": "series",
+            "price": "no price",
+            "Certificate": "No Certificate"
+        }
+    },
+
+    {
+        "Topic": "Django",
+        "level": "Beginner",
+        "Links": {
+            "website": "https://www.djangoproject.com/start/",
+            "Youtube": "https://www.youtube.com/watch?v=nGIg40xs9e4",
+            "time": "20",
+            "price": "no price",
+            "Certificate": "No Certificate"
+        }
+    },
+
+        {
+            "Topic": "Django",
+            "level": "intermediate",
+            "Links": {
+                "website": "https://openclassrooms.com/en/courses/7107341-intermediate-django",
+                "Youtube": "https://www.youtube.com/watch?v=3FDMxbvuD1M&list=PLECOetiSS4M3YhT_w4w7XyVKQ3fyo03tB",
+                "time": "series",
+                "price": "no price",
+                "Certificate": "No Certificate"
+            }
+    },
+
+        {
+            "Topic": "Django",
+            "level": "expert",
+            "Links": {
+                "website": "https://www.codementor.io/django-experts",
+                "Youtube": "https://www.youtube.com/watch?v=iQF6pln3Gog&list=PLOLrQ9Pn6cazjoDEnwzcdWWf4SNS0QZml",
+                "time": "series",
+                "price": "no price",
+                "Certificate": "No Certificate"
+            }
+    }
+    
+
+  
+
+];
