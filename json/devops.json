@@ -1,8 +1,9 @@
 [
     {
-      "Topic": "Introduction to DevOps",
-      "Level": "Beginner",
-      "Resources": [
+      "id":"1",
+      "topic": "Introduction to DevOps",
+      "level": "Beginner",
+      "resources": [
         {
           "URL": "https://www.coursera.org/professional-certificates/devops-and-software-engineering",
           "freeOrPaid": "Free",
@@ -21,9 +22,10 @@
       ]
     },
     {
-      "Topic": "DevOps with AWS",
-      "Level": "Intermediate",
-      "Resources": [
+      "id":"2",
+      "topic": "DevOps with AWS",
+      "level": "Intermediate",
+      "resources": [
         {
           "URL": "https://www.coursera.org/specializations/aws-devops",
           "freeOrPaid": "Free",
@@ -42,9 +44,10 @@
       ]
     },
     {
-      "Topic": "DevOps with Intermediate Skills",
-      "Level": "Intermediate",
-      "Resources": [
+      "id":"3",
+      "topic": "DevOps with Intermediate Skills",
+      "level": "Intermediate",
+      "resources": [
         {
           "URL": "https://www.coursera.org/specializations/aws-devops",
           "freeOrPaid": "Free",
