@@ -1,8 +1,6 @@
-"use client"; // Make sure this is at the top of the component
+"use client"; 
 
 import React, { useEffect, useState } from "react";
-import { UserButton, useSession } from "@clerk/nextjs";
-import { useRouter } from "next/navigation";
 import {
   Card,
   CardContent,
@@ -12,24 +10,29 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-import Sidebar from "@/components/ui/Sidebar";
 
 interface Course {
   topic: string;
   level: string;
-  resources: string[];
+  resources: any;
   id: string;
 }
 
 async function getCourses(): Promise<Course[]> {
-  const result = await fetch("http://localhost:4000/courses");
-  const data = await result.json();
-  return data;
+  const resultDevops = await fetch("http://localhost:4000/courses");
+  const resultMern = await fetch("http://localhost:4001/courses");
+  const resultPython = await fetch("http://localhost:4002/courses");
+  const resultSpringboot = await fetch("http://localhost:4003/courses");
+
+  const dataDevops = await resultDevops.json();
+  const dataMern = await resultMern.json();
+  const dataPython = await resultPython.json();
+  const dataSpringboot = await resultSpringboot.json();
+  
+  return dataDevops;
 }
 
 export default function Home() {
-  const { isLoaded, session, isSignedIn } = useSession();
-  const router = useRouter();
 
   const [courses, setCourses] = useState<Course[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -44,22 +47,10 @@ export default function Home() {
     fetchData();
   }, []); // Empty array ensures useEffect runs only once when the component mounts.
 
-  if (!isLoaded) {
-    return <p>Loading...</p>; // Loading state while Clerk session loads
-  }
-
-  if (!isSignedIn) {
-    router.push("/sign-in");
-    return null;
-  }
-
-  if (isLoading) {
-    return <p>Loading courses...</p>; // Loading state while fetching courses
-  }
 
   return (
     <main>
-      <div className="grid grid-cols-4 gap-8">
+      <div className="grid grid-cols-3 gap-8">
         {courses.map((course) => (
           <Card key={course.id}>
             <CardHeader>
@@ -67,10 +58,18 @@ export default function Home() {
               <CardDescription>{course.level}</CardDescription>
             </CardHeader>
             <CardContent>
-              <p>{course.resources?.join(", ")}</p>
+            <ol>
+            {course.resources.map((resource: { URL: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | Promise<React.AwaitedReactNode> | null | undefined; freeOrPaid: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; price: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; }, index: React.Key | null | undefined) => (
+              <li key={index}>
+                <p><a href={resource.URL} target="_blank" rel="noopener noreferrer">
+                </a> Click Here</p>
+                <p>Type: {resource.freeOrPaid}</p>
+                {resource.price && <p>Price: {resource.price}</p>}
+              </li>
+            ))}
+          </ol>
             </CardContent>
             <CardFooter>
-              <p>Card Footer</p>
             </CardFooter>
           </Card>
         ))}
