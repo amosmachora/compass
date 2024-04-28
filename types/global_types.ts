@@ -8,6 +8,7 @@ export type Path = {
 };
 
 export type Resource = {
+  topic: string;
   URL: string;
   level: string;
   time: string;
