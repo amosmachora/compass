@@ -17,6 +17,7 @@ export const createResource = mutation({
     freeOrPaid: v.string(),
     pathId: v.id("paths"),
     price: v.optional(v.number()),
+    topic: v.string(),
   },
   handler: async (ctx, args) => {
     const newResourceId = await ctx.db.insert("resources", args);

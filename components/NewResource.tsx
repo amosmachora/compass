@@ -60,6 +60,7 @@ export const NewResource = ({
       time: data.time,
       URL: data.URL,
       price: data.isFree ? undefined : parseInt(data.price.toString()),
+      topic: data.topic,
     });
   };
 
@@ -80,6 +81,18 @@ export const NewResource = ({
         <Form {...form}>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="grid gap-4 py-4">
+              <FormField
+                control={control}
+                {...register("topic", { required: "A topic is required" })}
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Topic</FormLabel>
+                    <FormControl>
+                      <Input placeholder="topic" {...field} />
+                    </FormControl>
+                  </FormItem>
+                )}
+              />
               <FormField
                 control={control}
                 {...register("URL", { required: "URL is required" })}

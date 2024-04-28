@@ -7,6 +7,7 @@ export default defineSchema({
     description: v.string(),
   }),
   resources: defineTable({
+    topic: v.string(),
     URL: v.string(),
     level: v.string(),
     time: v.string(),

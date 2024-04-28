@@ -7,6 +7,10 @@ import { ExternalLink } from "lucide-react";
 
 export const columns: ColumnDef<Resource>[] = [
   {
+    accessorKey: "topic",
+    header: "Topic",
+  },
+  {
     accessorKey: "URL",
     header: "URL",
     cell: ({ row }) => {
