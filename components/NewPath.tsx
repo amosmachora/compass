@@ -61,7 +61,7 @@ export const NewPath = () => {
                 id="name"
                 placeholder="SpringBoot"
                 className="col-span-3"
-                {...register("name")}
+                {...register("name", { required: "name is required" })}
               />
             </div>
             <div className="grid grid-cols-4 items-center gap-4">
@@ -72,7 +72,9 @@ export const NewPath = () => {
                 id="name"
                 placeholder="description"
                 className="col-span-3"
-                {...register("description")}
+                {...register("description", {
+                  required: "description is required",
+                })}
               />
             </div>
           </div>

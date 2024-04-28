@@ -76,7 +76,7 @@ export const NewResource = ({ path }: { path: Path }) => {
             <div className="grid gap-4 py-4">
               <FormField
                 control={control}
-                {...register("URL")}
+                {...register("URL", { required: "URL is required" })}
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>URL</FormLabel>
@@ -88,7 +88,7 @@ export const NewResource = ({ path }: { path: Path }) => {
               />
               <FormField
                 control={control}
-                {...register("level")}
+                {...register("level", { required: "A  level is required" })}
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>Level</FormLabel>
@@ -114,7 +114,7 @@ export const NewResource = ({ path }: { path: Path }) => {
               />
               <FormField
                 control={control}
-                {...register("time")}
+                {...register("time", { required: "Time is required" })}
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>Time</FormLabel>
@@ -152,7 +152,12 @@ export const NewResource = ({ path }: { path: Path }) => {
                     <FormItem>
                       <FormLabel>Price (USD)</FormLabel>
                       <FormControl>
-                        <Input placeholder="100 USD" {...field} type="number" />
+                        <Input
+                          placeholder="100 USD"
+                          {...field}
+                          type="number"
+                          required={!isFree}
+                        />
                       </FormControl>
                     </FormItem>
                   )}
