@@ -20,14 +20,8 @@ interface Course {
 
 async function getCourses(): Promise<Course[]> {
   const resultDevops = await fetch("http://localhost:4000/courses");
-  const resultMern = await fetch("http://localhost:4001/courses");
-  const resultPython = await fetch("http://localhost:4002/courses");
-  const resultSpringboot = await fetch("http://localhost:4003/courses");
 
   const dataDevops = await resultDevops.json();
-  const dataMern = await resultMern.json();
-  const dataPython = await resultPython.json();
-  const dataSpringboot = await resultSpringboot.json();
   
   return dataDevops;
 }
@@ -59,10 +53,12 @@ export default function Home() {
             </CardHeader>
             <CardContent>
             <ol>
-            {course.resources.map((resource: { URL: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | Promise<React.AwaitedReactNode> | null | undefined; freeOrPaid: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; price: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; }, index: React.Key | null | undefined) => (
+            {course.resources.map((resource: {name: string; URL: string ;  freeOrPaid: string ; price: string; }, index: React.Key) => (
               <li key={index}>
-                <p><a href={resource.URL} target="_blank" rel="noopener noreferrer">
-                </a> Click Here</p>
+                <p>Course: {resource.name}</p>
+                <a href={resource.URL} target="_blank" rel="noopener noreferrer">
+                <p>Click Here</p>
+                </a> 
                 <p>Type: {resource.freeOrPaid}</p>
                 {resource.price && <p>Price: {resource.price}</p>}
               </li>
