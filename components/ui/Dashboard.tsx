@@ -21,7 +21,10 @@ interface Course {
 }
 
 async function getCourses(): Promise<Course[]> {
-  const resultDevops = await fetch("http://localhost:4000/courses");
+  const resultDevops = await fetch("http://localhost:4000/courses"); 
+  const resultMern = await fetch("http://localhost:4001/courses");
+  const resultPython = await fetch("http://localhost:4002/courses");
+  const resultSpringboot = await fetch("http://localhost:4003/courses");
 
   const dataDevops = await resultDevops.json();
   
