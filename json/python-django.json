@@ -1,4 +1,5 @@
-[
+{
+  "courses": [
   {
     "Topic": "python",
     "level": "beginner",
@@ -101,3 +102,4 @@
     ]
   }
 ]
+}

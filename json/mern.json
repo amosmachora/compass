@@ -1,4 +1,5 @@
-[
+{
+  "courses": [
     {
       "Topic": "JavaScript Fundamentals",
       "Level": "Beginner",
@@ -96,3 +97,4 @@
       ]
     }
   ]
+}
