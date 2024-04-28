@@ -5,11 +5,13 @@
     "Level": "Beginner",
     "Resources": [
       {
+        "name":"",
         "URL": "https://spring.io/guides/tutorials/spring-boot-getting-started",
         "freeOrPaid": "Free",
         "time": "N/A"
       },
       {
+        "name":"",
         "URL": "https://www.baeldung.com/spring-tutorial",
         "freeOrPaid": "Free",
         "time": "N/A"
@@ -21,11 +23,13 @@
     "Level": "Beginner",
     "Resources": [
       {
+        "name":"",
         "URL": "https://spring.io/guides/tutorials/spring-boot-hello-world",
         "freeOrPaid": "Free",
         "time": "N/A"
       },
       {
+        "name":"",
         "URL": "https://www.tutorialspoint.com/spring_mvc/spring_mvc_introduction.htm",
         "freeOrPaid": "Free",
         "time": "N/A"
@@ -37,11 +41,13 @@
     "Level": "Intermediate",
     "Resources": [
       {
+        "name":"",
         "URL": "https://spring.io/data/jpa/docs/current/reference/",
         "freeOrPaid": "Free",
         "time": "N/A"
       },
       {
+        "name":"",
         "URL": "https://www.udemy.com/course/hibernate-and-spring-data-jpa-beginner-to-guru/",
         "freeOrPaid": "Paid",
         "price": "Varies"
@@ -53,11 +59,13 @@
     "Level": "Intermediate",
     "Resources": [
       {
+        "name":"",
         "URL": "https://spring.io/cloud/",
         "freeOrPaid": "Free",
         "time": "N/A"
       },
       {
+        "name":"",
         "URL": "https://www.linkedin.com/learning/microservices-with-spring-cloud/",
         "freeOrPaid": "Paid",
         "price": "LinkedIn Learning Subscription"
@@ -69,11 +77,13 @@
     "Level": "Expert",
     "Resources": [
       {
+        "name":"",
         "URL": "https://spring.io/security/guides/spring-security-getting-started",
         "freeOrPaid": "Free",
         "time": "N/A"
       },
       {
+        "name":"",
         "URL": "https://www.pluralsight.com/courses/spring-security-fundamentals",
         "freeOrPaid": "Paid",
         "price": "Subscription Required"
@@ -85,11 +95,13 @@
     "Level": "Expert",
     "Resources": [
       {
+        "name":"",
         "URL": "https://spring.io/guides/features/actuator/",
         "freeOrPaid": "Free",
         "time": "N/A"
       },
       {
+        "name":"",
         "URL": "https://www.infoworld.com/article/3399233/monitoring-spring-boot-applications-with-actuator",
         "freeOrPaid": "Free",
         "time": "N/A"
