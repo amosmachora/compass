@@ -1,6 +1,8 @@
 "use client"; 
 
 import React, { useEffect, useState } from "react";
+import { Button } from "@/components/ui/button"
+
 import {
   Card,
   CardContent,
@@ -56,9 +58,10 @@ export default function Home() {
             {course.resources.map((resource: {name: string; URL: string ;  freeOrPaid: string ; price: string; }, index: React.Key) => (
               <li key={index}>
                 <p>Course: {resource.name}</p>
-                <a href={resource.URL} target="_blank" rel="noopener noreferrer">
+                
+                <Button className="bg-blue-500" variant="outline"><a href={resource.URL} target="_blank" rel="noopener noreferrer">
                 <p>Click Here</p>
-                </a> 
+                </a> </Button>
                 <p>Type: {resource.freeOrPaid}</p>
                 {resource.price && <p>Price: {resource.price}</p>}
               </li>
