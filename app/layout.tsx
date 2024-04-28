@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "@/components/ui/toaster";
+import Sidebar from "@/components/ui/Sidebar";
+import Dashboard from "@/components/ui/Dashboard"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,9 +20,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <ClerkProvider>{children}</ClerkProvider>
-        <Toaster />
+      <body className={`${inter.className} flex items-start justify-between`}>
+      <Sidebar />
+        <main className="grid w-full h-full pl-[300px]">          
+        <div className="p-8">
+          <Dashboard/>          
+        </div>
+        </main>
       </body>
     </html>
   );
