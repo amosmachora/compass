@@ -35,7 +35,13 @@ import { useState } from "react";
 
 type FormData = Omit<Resource, "freeOrPaid"> & { isFree: CheckedState };
 
-export const NewResource = ({ path }: { path: Path }) => {
+export const NewResource = ({
+  path,
+  inSubPage,
+}: {
+  path: Path;
+  inSubPage?: boolean;
+}) => {
   const form = useForm<FormData>();
   const { register, control, handleSubmit, watch } = form;
 
@@ -60,7 +66,7 @@ export const NewResource = ({ path }: { path: Path }) => {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button variant="outline" className="ml-auto">
+        <Button variant="outline" className={`${inSubPage && "ml-auto"} z-50`}>
           New Resource
         </Button>
       </DialogTrigger>
