@@ -15,8 +15,6 @@ const Path = ({ params }: { params: { id: Id<"paths"> } }) => {
     pathId: params.id,
   });
 
-  console.log(pathResources);
-
   return (
     <main className="p-5">
       <div className="flex">
@@ -26,7 +24,7 @@ const Path = ({ params }: { params: { id: Id<"paths"> } }) => {
           </h1>
           <p className="text-sm text-muted-foreground">{path?.description}</p>
         </div>
-        {path && <NewResource path={path} />}
+        {path && <NewResource path={path} inSubPage />}
       </div>
       {/* @ts-ignore */}
       {pathResources && <DataTable columns={columns} data={pathResources} />}
