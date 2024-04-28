@@ -5,11 +5,13 @@
     "level": "beginner",
     "Resources": [
       {
+        "name":"",
         "URL": "https://www.python.org/about/gettingstarted/",
         "freeOrPaid": "Free",
         "time": "N/A"
       },
       {
+        "name":"",
         "URL": "https://www.youtube.com/watch?v=kqtD5dpn9C8",
         "freeOrPaid": "Free",
         "time": "1 hr"
@@ -22,11 +24,13 @@
     "level": "intermediate",
     "Resources": [
       {
+        "name":"",
         "URL": "https://realpython.com/tutorials/intermediate/",
         "freeOrPaid": "Free",
         "time": "N/A"
       },
       {
+        "name":"",
         "URL": "https://www.youtube.com/watch?v=AXkEIvbkmlg",
         "freeOrPaid": "Free",
         "time": "2 hr"
@@ -39,11 +43,13 @@
     "level": "Expert",
     "Resources": [
       {
+        "name":"",
         "URL": "https://realpython.com/start-here/",
         "freeOrPaid": "Free",
         "time": "N/A"
       },
       {
+        "name":"",
         "URL": "https://www.youtube.com/watch?v=mclfteWlT2Q&list=PLzMcBGfZo4-kwmIcMDdXSuy_wSqtU-xDP",
         "freeOrPaid": "Free",
         "time": "series"
@@ -56,11 +62,13 @@
     "level": "Beginner",
     "Resources": [
       {
+        "name":"",
         "URL": "https://www.djangoproject.com/start/",
         "freeOrPaid": "Free",
         "time": "N/A"
       },
       {
+        "name":"",
         "URL": "https://www.youtube.com/watch?v=mclfteWlT2Q&list=PLzMcBGfZo4-kwmIcMDdXSuy_wSqtU-xDP",
         "freeOrPaid": "Free",
         "time": "series"
@@ -73,11 +81,13 @@
     "level": "intermediate",
     "Resources": [
       {
+        "name":"",
         "URL": "https://openclassrooms.com/en/courses/7107341-intermediate-django",
         "freeOrPaid": "Free",
         "time": "N/A"
       },
       {
+        "name":"",
         "URL": "https://www.youtube.com/watch?v=3FDMxbvuD1M&list=PLECOetiSS4M3YhT_w4w7XyVKQ3fyo03tB",
         "freeOrPaid": "Free",
         "time": "series"
@@ -90,11 +100,13 @@
     "level": "expert",
     "Resources": [
       {
+        "name":"",
         "URL": "https://www.codementor.io/django-experts",
         "freeOrPaid": "Free",
         "time": "N/A"
       },
       {
+        "name":"",
         "URL": "https://www.youtube.com/watch?v=iQF6pln3Gog&list=PLOLrQ9Pn6cazjoDEnwzcdWWf4SNS0QZml",
         "freeOrPaid": "Free",
         "time": "series"
