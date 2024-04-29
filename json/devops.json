@@ -1,24 +1,24 @@
 {
   "courses": [
     {
-      "id":"1",
+      "id": "1",
       "topic": "Introduction to DevOps",
       "level": "Beginner",
       "resources": [
         {
-          "name":"IBM DevOps and Software Engineering Professional Certificate",
+          "name": "IBM DevOps and Software Engineering Professional Certificate",
           "URL": "https://www.coursera.org/professional-certificates/devops-and-software-engineering",
           "freeOrPaid": "Free",
           "time": "N/A"
         },
         {
-          "name":"DevOps Engineering Course for Beginners",
+          "name": "DevOps Engineering Course for Beginners",
           "URL": "https://www.youtube.com/watch?v=j5Zsa_eOXeY&t=975s",
           "freeOrPaid": "Free",
           "time": "N/A"
         },
         {
-          "name":"DevOps Foundations",
+          "name": "DevOps Foundations",
           "URL": "https://www.linkedin.com/learning/devops-foundations-23454205",
           "freeOrPaid": "Free",
           "time": "N/A"
@@ -26,36 +26,36 @@
       ]
     },
     {
-      "id":"2",
+      "id": "2",
       "topic": "DevOps with Intermediate Skills",
       "level": "Intermediate",
       "resources": [
         {
-          "name":"DevOps, Cloud, and Agile Foundations Specialization",
+          "name": "DevOps, Cloud, and Agile Foundations Specialization",
           "URL": "https://www.coursera.org/specializations/devops-cloud-and-agile-foundations",
           "freeOrPaid": "Paid",
           "price": "Varies"
         },
         {
-          "name":"Python Scripting for DevOps Specialization",
-            "URL": "https://www.coursera.org/specializations/python-scripting-devops",
-            "freeOrPaid": "Paid",
-            "price": "Varies"
+          "name": "Python Scripting for DevOps Specialization",
+          "URL": "https://www.coursera.org/specializations/python-scripting-devops",
+          "freeOrPaid": "Paid",
+          "price": "Varies"
         },
         {
-          "name":"DevOps with Laravel - Plus Package",
-            "URL": "https://martinjoo.gumroad.com/l/devops-with-laravel-plus?layout=discover&recommended_by=search&_gl=1*1h1h27m*_ga*MTY5ODEyODg4My4xNzE0MjIwNTY4*_ga_6LJN6D94N6*MTcxNDIyMDU2Ny4xLjEuMTcxNDIyMDcxMi4wLjAuMA..",
-            "freeOrPaid": "Paid",
-            "price": "$69"
+          "name": "DevOps with Laravel - Plus Package",
+          "URL": "https://martinjoo.gumroad.com/l/devops-with-laravel-plus?layout=discover&recommended_by=search&_gl=1*1h1h27m*_ga*MTY5ODEyODg4My4xNzE0MjIwNTY4*_ga_6LJN6D94N6*MTcxNDIyMDU2Ny4xLjEuMTcxNDIyMDcxMi4wLjAuMA..",
+          "freeOrPaid": "Paid",
+          "price": "$69"
         },
         {
-          "name":"Cracking the DevOps Interview",
-            "URL": "https://pratimuniyal.gumroad.com/l/cracking-the-devops-interview?layout=discover&recommended_by=search&_gl=1*ev8w6d*_ga*MTY5ODEyODg4My4xNzE0MjIwNTY4*_ga_6LJN6D94N6*MTcxNDIyMDU2Ny4xLjEuMTcxNDIyMDU3Mi4wLjAuMA..",
-            "freeOrPaid": "Paid",
-            "price": "$10"
+          "name": "Cracking the DevOps Interview",
+          "URL": "https://pratimuniyal.gumroad.com/l/cracking-the-devops-interview?layout=discover&recommended_by=search&_gl=1*ev8w6d*_ga*MTY5ODEyODg4My4xNzE0MjIwNTY4*_ga_6LJN6D94N6*MTcxNDIyMDU2Ny4xLjEuMTcxNDIyMDU3Mi4wLjAuMA..",
+          "freeOrPaid": "Paid",
+          "price": "$10"
         },
         {
-          "name":"Training for DevOps Engineers",
+          "name": "Training for DevOps Engineers",
           "URL": "https://learn.microsoft.com/en-us/training/career-paths/devops-engineer",
           "freeOrPaid": "Paid",
           "price": "Varies"
@@ -63,24 +63,24 @@
       ]
     },
     {
-      "id":"3",
+      "id": "3",
       "topic": "DevOps with AWS",
       "level": "Intermediate",
       "resources": [
         {
-          "name":"DevOps on AWS Specialization",
+          "name": "DevOps on AWS Specialization",
           "URL": "https://www.coursera.org/specializations/aws-devops",
           "freeOrPaid": "Free",
           "time": "N/A"
         },
         {
-          "name":"DevOps with AWS",
+          "name": "DevOps with AWS",
           "URL": "https://www.linkedin.com/learning/devops-with-aws",
           "freeOrPaid": "Paid",
           "price": "Varies"
         },
         {
-          "name":"Get started on DevOps training with content built by AWS experts",
+          "name": "Get started on DevOps training with content built by AWS experts",
           "URL": "https://aws.amazon.com/training/learn-about/devops/",
           "freeOrPaid": "Paid",
           "price": "Varies"
