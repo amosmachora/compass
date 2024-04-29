@@ -22,14 +22,36 @@ interface Course {
 
 async function getCourses(): Promise<Course[]> {
   const resultDevops = await fetch("http://localhost:4000/courses"); 
-  const resultMern = await fetch("http://localhost:4001/courses");
-  const resultPython = await fetch("http://localhost:4002/courses");
-  const resultSpringboot = await fetch("http://localhost:4003/courses");
 
   const dataDevops = await resultDevops.json();
-  
+
   return dataDevops;
 }
+
+async function getMernCourses(): Promise<Course[]> {
+  const resultMern = await fetch("http://localhost:4001/courses");
+
+  const dataMern = await resultMern.json(); 
+   
+  return dataMern;
+}
+
+async function getPythonCourses(): Promise<Course[]> {
+  const resultPython = await fetch("http://localhost:4002/courses");
+
+  const dataPython = await resultPython.json(); 
+   
+  return dataPython;
+}
+
+async function getSpringbootCourses(): Promise<Course[]> {
+  const resultSpringboot = await fetch("http://localhost:4003/courses");
+
+  const dataSprinboot = await resultSpringboot.json(); 
+   
+  return dataSprinboot;
+}
+
 
 export default function Home() {
 
