@@ -69,6 +69,40 @@ export default function Home() {
   }, []); // Empty array ensures useEffect runs only once when the component mounts.
 
 
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const coursesMernData = await getMernCourses();
+      setCourses(coursesMernData);
+      setIsLoading(false);
+    };
+
+    fetchData();
+  }, []);
+
+
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const coursesPythonData = await getPythonCourses();
+      setCourses(coursesPythonData);
+      setIsLoading(false);
+    };
+
+    fetchData();
+  }, []);
+
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const coursesSpringbootData = await getSpringbootCourses();
+      setCourses(coursesSpringbootData);
+      setIsLoading(false);
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <main>
       <div className="grid grid-cols-3 gap-8">
