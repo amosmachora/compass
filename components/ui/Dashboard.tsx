@@ -20,6 +20,27 @@ interface Course {
   id: string;
 }
 
+interface MernCourse {
+  topic: string;
+  level: string;
+  resources: any;
+  id: string;
+}
+
+interface PythonCourse {
+  topic: string;
+  level: string;
+  resources: any;
+  id: string;
+}
+
+interface SpringbootCourse {
+  topic: string;
+  level: string;
+  resources: any;
+  id: string;
+}
+
 async function getCourses(): Promise<Course[]> {
   const resultDevops = await fetch("http://localhost:4000/courses"); 
 
@@ -56,6 +77,9 @@ async function getSpringbootCourses(): Promise<Course[]> {
 export default function Home() {
 
   const [courses, setCourses] = useState<Course[]>([]);
+  const [merncourses, setMernCourses] = useState<MernCourse[]>([]);
+  const [pythoncourses, setPythonCourses] = useState<PythonCourse[]>([]);
+  const [springbootcourses, setSpringbootCourses] = useState<SpringbootCourse[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -73,7 +97,7 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       const coursesMernData = await getMernCourses();
-      setCourses(coursesMernData);
+      setMernCourses(coursesMernData);
       setIsLoading(false);
     };
 
@@ -85,7 +109,7 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       const coursesPythonData = await getPythonCourses();
-      setCourses(coursesPythonData);
+      setPythonCourses(coursesPythonData);
       setIsLoading(false);
     };
 
@@ -96,7 +120,7 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       const coursesSpringbootData = await getSpringbootCourses();
-      setCourses(coursesSpringbootData);
+      setSpringbootCourses(coursesSpringbootData);
       setIsLoading(false);
     };
 
