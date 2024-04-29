@@ -1,17 +1,17 @@
 {
   "courses": [
     {
-      "Topic": "JavaScript Fundamentals",
-      "Level": "Beginner",
-      "Resources": [
+      "topic": "JavaScript Fundamentals",
+      "level": "Beginner",
+      "resources": [
         {
-          "name":"",
+          "name":"JavaSript 1",
           "URL": "https://javascript.info/",
           "freeOrPaid": "Free",
           "time": "N/A"
         },
         {
-          "name":"",
+          "name":"JavaSript 2",
           "URL": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
           "freeOrPaid": "Free",
           "time": "N/A"
@@ -19,17 +19,17 @@
       ]
     },
     {
-      "Topic": "React",
-      "Level": "Beginner",
-      "Resources": [
+      "topic": "React",
+      "level": "Beginner",
+      "resources": [
         {
-          "name":"",
+          "name":"JavaSript 3",
           "URL": "https://reactjs.org/tutorial/tutorial.html",
           "freeOrPaid": "Free",
           "time": "N/A"
         },
         {
-          "name":"",
+          "name":"JavaSript 4",
           "URL": "https://www.udemy.com/course/react-redux/",
           "freeOrPaid": "Paid",
           "price": "Varies"
@@ -37,17 +37,17 @@
       ]
     },
     {
-      "Topic": "Node.js",
-      "Level": "Beginner",
-      "Resources": [
+      "topic": "Node.js",
+      "level": "Beginner",
+      "resources": [
         {
-          "name":"",
+          "name":"JavaSript 5",
           "URL": "https://nodejs.dev/learn",
           "freeOrPaid": "Free",
           "time": "N/A"
         },
         {
-          "name":"",
+          "name":"JavaSript 6",
           "URL": "https://www.udemy.com/course/nodejs-master-class/",
           "freeOrPaid": "Paid",
           "price": "Varies"
@@ -55,17 +55,17 @@
       ]
     },
     {
-      "Topic": "MongoDB",
-      "Level": "Intermediate",
-      "Resources": [
+      "topic": "MongoDB",
+      "level": "Intermediate",
+      "resources": [
         {
-          "name":"",
+          "name":"JavaSript 7",
           "URL": "https://www.mongodb.com/docs/manual/introduction/",
           "freeOrPaid": "Free",
           "time": "N/A"
         },
         {
-          "name":"",
+          "name":"JavaSript 8",
           "URL": "https://www.udemy.com/course/mongodb-complete-introduction/",
           "freeOrPaid": "Paid",
           "price": "Varies"
@@ -73,17 +73,17 @@
       ]
     },
     {
-      "Topic": "Express.js",
-      "Level": "Intermediate",
-      "Resources": [
+      "topic": "Express.js",
+      "level": "Intermediate",
+      "resources": [
         {
-          "name":"",
+          "name":"JavaSript 9",
           "URL": "https://expressjs.com/en/starter/installing.html",
           "freeOrPaid": "Free",
           "time": "N/A"
         },
         {
-          "name":"",
+          "name":"JavaSript 10",
           "URL": "https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/",
           "freeOrPaid": "Paid",
           "price": "Varies"
@@ -91,17 +91,17 @@
       ]
     },
     {
-      "Topic": "React Native",
-      "Level": "Expert",
-      "Resources": [
+      "topic": "React Native",
+      "level": "Expert",
+      "resources": [
         {
-          "name":"",
+          "name":"JavaSript 11",
           "URL": "https://reactnative.dev/docs/getting-started",
           "freeOrPaid": "Free",
           "time": "N/A"
         },
         {
-          "name":"",
+          "name":"JavaSript 12",
           "URL": "https://www.udemy.com/course/react-native-advanced/",
           "freeOrPaid": "Paid",
           "price": "Varies"
