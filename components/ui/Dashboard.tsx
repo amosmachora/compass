@@ -129,6 +129,7 @@ export default function Home() {
 
   return (
     <main>
+    <h1><u><strong>DevOps</strong></u></h1>
       <div className="grid grid-cols-3 gap-8">
         {courses.map((course) => (
           <Card key={course.id}>
@@ -141,6 +142,90 @@ export default function Home() {
             {course.resources.map((resource: {name: string; URL: string ;  freeOrPaid: string ; price: string; }, index: React.Key) => (
               <li key={index}>
                 <p>Course: {resource.name}</p>
+                
+                <Button className="bg-blue-500" variant="outline"><a href={resource.URL} target="_blank" rel="noopener noreferrer">
+                <p>Click Here</p>
+                </a> </Button>
+                <p>Type: {resource.freeOrPaid}</p>
+                {resource.price && <p>Price: {resource.price}</p>}
+              </li>
+            ))}
+          </ol>
+            </CardContent>
+            <CardFooter>
+            </CardFooter>
+          </Card>
+        ))}
+      </div>
+          <h1><u><strong>MERN</strong></u></h1>
+      <div className="grid grid-cols-3 gap-8">
+        {merncourses.map((mernCourse) => (
+          <Card key={mernCourse.id}>
+            <CardHeader>
+              <CardTitle>{mernCourse.topic}</CardTitle>
+              <CardDescription>{mernCourse.level}</CardDescription>
+            </CardHeader>
+            <CardContent>
+            <ol>
+            {mernCourse.resources.map((resource: {name: string; URL: string ;  freeOrPaid: string ; price: string; }, index: React.Key) => (
+              <li key={index}>
+                <p>mernCourse: {resource.name}</p>
+                
+                <Button className="bg-blue-500" variant="outline"><a href={resource.URL} target="_blank" rel="noopener noreferrer">
+                <p>Click Here</p>
+                </a> </Button>
+                <p>Type: {resource.freeOrPaid}</p>
+                {resource.price && <p>Price: {resource.price}</p>}
+              </li>
+            ))}
+          </ol>
+            </CardContent>
+            <CardFooter>
+            </CardFooter>
+          </Card>
+        ))}
+      </div>
+          <h1><u><strong>Python</strong></u></h1>
+      <div className="grid grid-cols-3 gap-8">
+        {pythoncourses.map((pythonCourse) => (
+          <Card key={pythonCourse.id}>
+            <CardHeader>
+              <CardTitle>{pythonCourse.topic}</CardTitle>
+              <CardDescription>{pythonCourse.level}</CardDescription>
+            </CardHeader>
+            <CardContent>
+            <ol>
+            {pythonCourse.resources.map((resource: {name: string; URL: string ;  freeOrPaid: string ; price: string; }, index: React.Key) => (
+              <li key={index}>
+                <p>pythonCourse: {resource.name}</p>
+                
+                <Button className="bg-blue-500" variant="outline"><a href={resource.URL} target="_blank" rel="noopener noreferrer">
+                <p>Click Here</p>
+                </a> </Button>
+                <p>Type: {resource.freeOrPaid}</p>
+                {resource.price && <p>Price: {resource.price}</p>}
+              </li>
+            ))}
+          </ol>
+            </CardContent>
+            <CardFooter>
+            </CardFooter>
+          </Card>
+        ))}
+      </div>
+          <h1><u><strong>SPRINGBOOT</strong></u></h1>
+      <div className="grid grid-cols-3 gap-8">
+        {springbootcourses.map((springbootCourse) => (
+          <Card key={springbootCourse.id}>
+            <CardHeader>
+              <CardTitle>{springbootCourse.topic}</CardTitle>
+              <CardDescription>{springbootCourse.level}</CardDescription>
+            </CardHeader>
+            <CardContent>
+            <ol>
+            {springbootCourse.resources.map((resource: {name: string; URL: string ;  freeOrPaid: string ; price: string; }, index: React.Key) => (
+              <li key={index}>
+                <p>springbootCourse: {resource.name}</p>
                 
                 <Button className="bg-blue-500" variant="outline"><a href={resource.URL} target="_blank" rel="noopener noreferrer">
                 <p>Click Here</p>
