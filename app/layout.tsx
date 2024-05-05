@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ClerkProvider } from "@clerk/nextjs";
+import { ClerkProvider, UserButton } from "@clerk/nextjs";
 import { Toaster } from "@/components/ui/toaster";
-import Sidebar from "@/components/ui/Sidebar";
-import Dashboard from "@/components/ui/Dashboard"
+import ConvexClientProvider from "@/components/ConvexClientProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,13 +19,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} flex items-start justify-between`}>
-      <Sidebar />
-        <main className="grid w-full h-full pl-[300px]">          
-        <div className="p-8">
-          <Dashboard/>          
-        </div>
-        </main>
+      <body className={inter.className}>
+        <ClerkProvider>
+          <ConvexClientProvider>
+            <nav className="flex justify-end p-5">
+              <UserButton />
+            </nav>
+            {children}
+          </ConvexClientProvider>
+        </ClerkProvider>
+        <Toaster />
       </body>
     </html>
   );
